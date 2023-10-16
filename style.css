@@ -1,0 +1,5 @@
+@import url("https://api.fontshare.com/v2/css?f=sentient@400,700,200,500,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

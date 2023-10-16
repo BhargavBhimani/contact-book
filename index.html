@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact App</title>
+</head>
+
+<body>
+
+  <div class="w-full flex flex-col justify-center items-center font-sen">
+    <!-- <h1 class="text-6xl">Contact App</h1> -->
+    <div id="contact-list" class="py-7 fixed top-0 z-50 bg-white">
+      <input type="text" id="search" placeholder="Search by Name or Phone" autocomplete="off"
+        class="w-[85vw] text-center focus:outline-none border-2 rounded-3xl h-10">
+    </div>
+
+
+    <ul id="contacts" class="text-center relative top-24"></ul>
+
+
+    <div id="contact-form"
+      class="hidden  bg-slate-100 flex-col items-center gap-5 fixed z-10 bottom-1 border rounded-lg w-5/6 p-4">
+      <div class="flex flex-col gap-4">
+        <input type="text" id="name" placeholder="Name" autocomplete="off" required
+          class="text-center border-2 rounded-lg h-9 w-56 focus:outline-none">
+        <input type="number" id="phone" placeholder="Phone" autocomplete="off" required
+          class="text-center border-2 rounded-lg h-9 w-56 focus:outline-none">
+      </div>
+      <img src="img/close.svg" alt="" class="absolute -right-4 -top-4 hover:cursor-pointer" id="close">
+      <button id="addButton" class="border-none rounded-lg py-1 px-5 text-white bg-sky-700">Save</button>
+    </div>
+
+
+    <div id="edit-form"
+      class="hidden bg-slate-100 flex-col items-center gap-5 fixed z-10 bottom-2 border rounded-lg w-5/6 p-4">
+      <div class="flex flex-col gap-4">
+        <input type="text" id="editName" placeholder="Name" autocomplete="off" required
+          class="text-center border-2 rounded-lg h-9 w-56 focus:outline-none">
+        <input type="number" id="editPhone" placeholder="Phone" autocomplete="off" required
+          class="text-center border-2 rounded-lg h-9 w-56 focus:outline-none">
+      </div>
+      <img src="img/close.svg" alt="" class="absolute -right-4 -top-4 hover:cursor-pointer" id="closed">
+      <button id="editBtn" class="border-none rounded-lg py-1 px-5 text-white bg-sky-700">Edit</button>
+    </div>
+
+
+    <img src="img/plus.svg" alt="" id="addNew"
+      class="fixed z-20 bottom-5 right-5 w-12 h-12 bg-sky-700 p-1 rounded-xl hover:cursor-pointer">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
