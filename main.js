@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const editButton = document.createElement('img');
       editButton.src = 'img/edit.svg';
+      editButton.classList = "cursor-pointer"
       editButton.width = 20;
       editButton.addEventListener('click', () => editContact(contact))
 
@@ -69,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       deleteButton.classList = 'inline hover:cursor-pointer'
       deleteButton.src = 'img/delete.svg';
       deleteButton.width = 20;
+      deleteButton.classList = "cursor-pointer"
       deleteButton.addEventListener('click', () => deleteContact(contact.phone));
       div.appendChild(editButton)
       div.appendChild(deleteButton);
@@ -128,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const editButton = document.createElement('img');
       editButton.src = 'img/edit.svg';
+      editButton.classList = "cursor-pointer"
       editButton.width = 20;
       editButton.addEventListener('click', () => editContact(contact))
 
@@ -142,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
       deleteButton.classList = 'inline hover:cursor-pointer'
       deleteButton.src = 'img/delete.svg';
       deleteButton.width = 20;
+      deleteButton.classList = "cursor-pointer"
       deleteButton.addEventListener('click', () => deleteContact(contact.phone));
       div.appendChild(editButton)
       div.appendChild(deleteButton);
